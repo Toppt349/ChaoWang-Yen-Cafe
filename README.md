@@ -106,7 +106,7 @@
 
                 // สร้างปุ่มลบ
                 const removeButton = document.createElement('button');
-                removeButton.textContent = 'ลบ 1 ชิ้น';
+                removeButton.textContent = 'ลบสินค้า';
                 removeButton.onclick = () => removeFromCart(index);
 
                 li.appendChild(removeButton);
