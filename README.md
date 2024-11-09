@@ -18,7 +18,7 @@
                 <div class="product-container">
                     <!-- สินค้า 1 -->
                     <div class="product">
-                        <img src="https://via.placeholder.com/150" alt="กาแฟสด">
+                        <img src="กาแฟสด.png/150" alt="กาแฟสด">
                         <h3>กาแฟสด</h3>
                         <p>ราคา:  บาท</p>
                         <button class="order-button" onclick="addToCart('กาแฟสด', 50)">เพิ่มไปยังตะกร้า</button>
