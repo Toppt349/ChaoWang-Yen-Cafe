@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>ยินดีต้อนรับสู่</h1> ชาววัง </h3>(เย็น) Coffee</h3>
+        <h1>ยินดีต้อนรับสู่</h1> ชาววัง (เย็น) Coffee
     </header>
     <main>
         <div id="product-list">
