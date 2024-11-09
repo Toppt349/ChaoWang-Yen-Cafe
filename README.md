@@ -17,10 +17,9 @@
                 <h2>เครื่องดื่ม</h2>
                 <div class="product-container">
                     <!-- สินค้า 1 -->
-                    <div class="product">
-                        <img src="กาแฟสด.png" alt="กาแฟสด">
+                     <img src="[https://via.placeholder.com/150](https://png.pngtree.com/png-vector/20240621/ourmid/pngtree-a-fresh-coffee-beans-png-image_12813183.png)" alt="กาแฟสด">
                         <h3>กาแฟสด</h3>
-                        <p>ราคา:  บาท</p>
+                        <p>ราคา: 50 บาท</p>
                         <button class="order-button" onclick="addToCart('กาแฟสด', 50)">เพิ่มไปยังตะกร้า</button>
                     </div>
 
