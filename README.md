@@ -135,5 +135,3 @@
 
         updateCart();
     </script>
-</body>
-</html>
