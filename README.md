@@ -1,80 +1,99 @@
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Video Gallery</title>
+    <title>หน้าเข้าสู่ระบบ</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #181818;
-            color: white;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
             padding: 20px;
-        }
-
-        h1 {
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
             text-align: center;
+        }
+        .login-container h2 {
             margin-bottom: 20px;
+            color: #333;
         }
-
-        .video-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: auto;
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
         }
-
-        .video-box {
-            background: #202020;
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: calc(100% - 20px);
             padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
-
-        .video-box:hover {
-            transform: scale(1.05);
-        }
-
-        iframe {
-            width: 100%;
-            height: 180px;
-            border-radius: 10px;
+        .form-group input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
             border: none;
-        }
-
-        .video-title {
-            margin-top: 10px;
+            border-radius: 4px;
+            cursor: pointer;
             font-size: 16px;
-            font-weight: bold;
-            text-align: center;
+            width: 100%;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .links-container { /* เพิ่ม CSS สำหรับคอนเทนเนอร์ของลิงก์ */
+            margin-top: 20px;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column; /* จัดเรียงลิงก์ในแนวตั้ง */
+            gap: 10px; /* ระยะห่างระหว่างลิงก์ */
+        }
+        .links-container a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .links-container a:hover {
+            text-decoration: underline;
         }
     </style>
-
-    <h1>🎥 My Video Gallery</h1>
-
-    <div class="video-container">
-        <div class="video-box">
-            <iframe src="https://drive.google.com/file/d/1v_PcupEWHj-DZ1rC7CvMG0xh2Gge_TPU/preview" allow="autoplay"></iframe>
-            <div class="video-title">Video 1</div>
+</head>
+<body>
+    <div class="login-container">
+        <h2>เข้าสู่ระบบ</h2>
+        <form action="process_login.php" method="POST">
+            <div class="form-group">
+                <label for="username">ชื่อผู้ใช้:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="เข้าสู่ระบบ">
+            </div>
+        </form>
+        
+        <div class="links-container">
+            <a href="register.html">สมัครสมาชิกใหม่</a>
+            <a href="change_password.php">แก้ไขหัสผ่าน <a href="forgot_password.php">ลืมรหัสผ่าน?</a><a href="logout.php">ออกจากระบบ</a></a>
+				
         </div>
-
-        <div class="video-box">
-            <iframe src="https://drive.google.com/file/d/1zpBDTn28jPtmZH59HgNXS-jToSoB2oOu/preview" allow="autoplay"></iframe>
-            <div class="video-title">Video 2</div>
         </div>
-
-        <div class="video-box">
-            <iframe src="https://drive.google.com/file/d/1uBgqAHaDKggp6AyOXQ9oh0sZz6t18btH/preview" allow="autoplay"></iframe>
-            <div class="video-title">Video 3</div>
-        </div>
-
-        <div class="video-box">
-            <iframe src="https://drive.google.com/file/d/1AiLE5aP4VqSOMEUPcGYzrbbedEnnUxBa/preview" allow="autoplay"></iframe>
-            <div class="video-title">Video 4</div>
-        </div>
-    </div>
-
-
+</body>
+</html>
